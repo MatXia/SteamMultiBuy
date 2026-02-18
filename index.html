@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SteamMultiBuy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>SteamMultiBuy</h1>
+            <p class="description">
+                A website for opening a purchase page for all trading cards on Steam for a specific game.
+            </p>
+            <label for="gameId">Enter Game ID</label>
+            <input type="text" id="gameId" placeholder="Example: 730">
+            <div class="error-message" id="error">
+                ⚠ Invalid ID
+            </div>
+            <div class="card-type">
+                <label>
+                    <input type="radio" name="cardType" value="normal" checked>
+                    Normal Cards
+                </label>
+            
+                <label>
+                    <input type="radio" name="cardType" value="foil">
+                    Foil Cards
+                </label>
+            </div>
+            <button id="submit">Purchase cards</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
